@@ -1,5 +1,6 @@
 dependencies:
   '@types/express': 4.17.11
+  '@types/mongoose': 5.10.3
   express: 4.17.1
   express-async-errors: 3.1.1_express@4.17.1
   express-validator: 6.9.2
@@ -55,6 +56,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-47P64kbkXarlleSMzSrRG04uzY+Dr3xAilOiqRIsqj/sZrmq6cUMx8njydY/iWMqi8IdE9ojFQl/X3ou9EsAlQ==
+  /@types/mongoose/5.10.3:
+    dependencies:
+      '@types/mongodb': 3.6.7
+      '@types/node': 14.14.27
+    dev: false
+    resolution:
+      integrity: sha512-VfdnaFImXEJZZiuL2ID/ysZs4inOIjxwrAnUgkr5eum2O2BLhFkiSI0i87AwignVva1qWTJ3H3DyM0Rf4USJ4A==
   /@types/node/14.14.21:
     dev: false
     resolution:
@@ -1354,6 +1362,7 @@ packages:
       integrity: sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==
 specifiers:
   '@types/express': ^4.17.11
+  '@types/mongoose': ^5.10.3
   express: ^4.17.1
   express-async-errors: ^3.1.1
   express-validator: ^6.9.2
