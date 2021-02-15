@@ -1,8 +1,9 @@
 import express, { Request, Response } from 'express';
 import { body, validationResult } from 'express-validator';
 import { User } from '../models/users';
-import { RequestValidationError } from '../Errors/requestValidationError';
-import { BadRequestError } from '../Errors/bad-request-error';
+import { RequestValidationError } from '../errors/requestValidationError';
+import { BadRequestError } from '../errors/bad-request-error';
+import jwt from 'jsonwebtoken';
 
 const router = express.Router();
 
@@ -31,6 +32,16 @@ router.post(
 
     const user = User.build({ email, password });
     await user.save();
+
+    // Generate json web token
+    const userJwt = jwt.sign(
+      { id: user.id, email: user.email },
+      process.env.JWT_KEY!
+    );
+    //store it inside the session object
+    req.session = {
+      jwt: userJwt,
+    };
 
     res.status(201).send(user);
   }

@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
-import { CustomError } from '../Errors/custom-error';
+import { CustomError } from '../errors/custom-error';
 import { param } from 'express-validator';
 
 export const errorHandler = (
