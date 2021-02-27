@@ -3,6 +3,7 @@ dependencies:
   '@types/express': 4.17.11
   '@types/jsonwebtoken': 8.5.0
   '@types/mongoose': 5.10.3
+  '@ygtickets/common': 1.0.3
   cookie-session: 1.4.0
   express: 4.17.1
   express-async-errors: 3.1.1_express@4.17.1
@@ -726,6 +727,18 @@ packages:
     dev: true
     resolution:
       integrity: sha512-kQ5JNTrbDv3Rp5X2n/iUu37IJBDU2gsZ5R/g1/KHOOEc5IKfUFjXT6DENPGduh08I/pamwtEq4oul7gUqKTQDQ==
+  /@ygtickets/common/1.0.3:
+    dependencies:
+      '@types/cookie-session': 2.0.42
+      '@types/express': 4.17.11
+      '@types/jsonwebtoken': 8.5.0
+      cookie-session: 1.4.0
+      express: 4.17.1
+      express-validator: 6.10.0
+      jsonwebtoken: 8.5.1
+    dev: false
+    resolution:
+      integrity: sha512-hc+jBgGxwQfh/8OWWEb2G5voITbcY5vigu58Wkth4Vyv/qrOwq4uSgYwsmea+Cb9jhw1wYoBjB5Yg37vWCks+A==
   /abab/2.0.5:
     dev: true
     resolution:
@@ -1753,6 +1766,15 @@ packages:
       express: ^4.16.2
     resolution:
       integrity: sha512-h6aK1da4tpqWSbyCa3FxB/V6Ehd4EEB15zyQq9qe75OZBp0krinNKuH4rAY+S/U/2I36vdLAUFSjQJ+TFmODng==
+  /express-validator/6.10.0:
+    dependencies:
+      lodash: 4.17.21
+      validator: 13.5.2
+    dev: false
+    engines:
+      node: '>= 8.0.0'
+    resolution:
+      integrity: sha512-gDtepU94EpUzgFvKO/8JzjZ4uqIF4xHekjYtcNgFDiBK6Hob3MQhPU8s/c3NaWd1xi5e5nA0oVmOJ0b0ZBO36Q==
   /express-validator/6.9.2:
     dependencies:
       lodash: 4.17.20
@@ -3241,6 +3263,10 @@ packages:
   /lodash/4.17.20:
     resolution:
       integrity: sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
+  /lodash/4.17.21:
+    dev: false
+    resolution:
+      integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
   /loud-rejection/1.6.0:
     dependencies:
       currently-unhandled: 0.4.1
@@ -5286,6 +5312,7 @@ specifiers:
   '@types/jsonwebtoken': ^8.5.0
   '@types/mongoose': ^5.10.3
   '@types/supertest': ^2.0.10
+  '@ygtickets/common': ^1.0.3
   cookie-session: ^1.4.0
   express: ^4.17.1
   express-async-errors: ^3.1.1
